@@ -1,0 +1,11 @@
+# Example and run output
+/output/
+
+# Octave/MATLAB cruft
+octave-workspace
+*.asv
+*.m~
+
+# OS cruft
+.DS_Store
+Thumbs.db

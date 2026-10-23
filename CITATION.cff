@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+title: >-
+  waveguide_scattering: 3-D analysis of scattering losses due to
+  sidewall roughness in microphotonic waveguides
+message: >-
+  If you use this software, please cite the paper it implements
+  (preferred-citation below).
+type: software
+authors:
+  - family-names: Barwicz
+    given-names: Tymon
+    affiliation: Massachusetts Institute of Technology
+  - family-names: West
+    given-names: Gavin
+repository-code: https://github.com/gvnwst/barwicz-scattering-matlab
+abstract: >-
+  The original research code for the volume-current-method model of
+  scattering loss from sidewall roughness in rectangular dielectric
+  waveguides, valid at any index contrast and for either polarization,
+  packaged with the datasets needed to reproduce the published results.
+keywords:
+  - integrated photonics
+  - waveguide
+  - scattering loss
+  - sidewall roughness
+  - volume current method
+license: MIT
+preferred-citation:
+  type: article
+  title: >-
+    Three-Dimensional Analysis of Scattering Losses Due to Sidewall
+    Roughness in Microphotonic Waveguides
+  authors:
+    - family-names: Barwicz
+      given-names: Tymon
+    - family-names: Haus
+      given-names: Hermann A.
+  journal: Journal of Lightwave Technology
+  volume: 23
+  issue: 9
+  start: 2719
+  end: 2732
+  year: 2005
+  doi: 10.1109/JLT.2005.850816

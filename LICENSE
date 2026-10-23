@@ -1,0 +1,43 @@
+MIT License
+
+Copyright (c) 2005 Tymon Barwicz
+Copyright (c) 2026 Gavin West
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+------------------------------------------------------------------------------
+EXCEPTION: src/waveguide_scattering/adaptlob.m
+------------------------------------------------------------------------------
+
+That one file is not ours to license. It is Walter Gautschi's adaptive Lobatto
+quadrature routine, bylined "Walter Gautschi, 08/03/98" and implementing the
+algorithm of W. Gander and W. Gautschi, "Adaptive Quadrature -- Revisited",
+BIT Numerical Mathematics 40(1), 84-101 (2000), after Gander,
+Computermathematik, Birkhaeuser, 1992. It reached this project as part of the
+original source tree, carrying an attribution line but no license grant, and it
+is redistributed here on that same basis. The only local change is a small
+patch -- a `termination2` flag that limits a repeated warning to one per call,
+plus a tolerance clamp -- which does not alter the quadrature.
+
+The MIT grant above does not extend to it. Anyone redistributing this
+repository who needs clean terms for that file can substitute an equivalently
+licensed adaptive quadrature; note that doing so would change results at the
+level of the quadrature tolerance and would require revalidating stage 2
+against the shipped data.
